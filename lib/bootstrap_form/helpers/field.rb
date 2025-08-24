@@ -1,4 +1,4 @@
-module BootstrapForm
+module Bootstrap5Form
   module Helpers
     module Field
       def required_field_options(options, method)

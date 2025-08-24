@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module BootstrapForm
+module Bootstrap5Form
   module Helpers
     extend ActiveSupport::Autoload
 

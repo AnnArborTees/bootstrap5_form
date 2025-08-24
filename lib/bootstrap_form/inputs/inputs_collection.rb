@@ -1,4 +1,4 @@
-module BootstrapForm
+module Bootstrap5Form
   module Inputs
     module InputsCollection
       extend ActiveSupport::Concern

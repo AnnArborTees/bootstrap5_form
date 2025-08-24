@@ -1,49 +1,49 @@
-# require 'bootstrap_form/aliasing'
+# require 'bootstrap5_form/aliasing'
 
-module BootstrapForm
+module Bootstrap5Form
   class FormBuilder < ActionView::Helpers::FormBuilder
     attr_reader :layout, :label_col, :control_col, :has_error, :inline_errors,
                 :label_errors, :acts_like_form_tag
 
-    include BootstrapForm::Helpers::Field
-    include BootstrapForm::Helpers::Bootstrap
+    include Bootstrap5Form::Helpers::Field
+    include Bootstrap5Form::Helpers::Bootstrap
 
-    include BootstrapForm::FormGroupBuilder
-    include BootstrapForm::FormGroup
-    include BootstrapForm::Components
+    include Bootstrap5Form::FormGroupBuilder
+    include Bootstrap5Form::FormGroup
+    include Bootstrap5Form::Components
 
-    include BootstrapForm::Inputs::Base
-    include BootstrapForm::Inputs::CheckBox
-    include BootstrapForm::Inputs::CollectionCheckBoxes
-    include BootstrapForm::Inputs::CollectionRadioButtons
-    include BootstrapForm::Inputs::CollectionSelect
-    include BootstrapForm::Inputs::ColorField
-    include BootstrapForm::Inputs::DateField
-    include BootstrapForm::Inputs::DateSelect
-    include BootstrapForm::Inputs::DatetimeField
-    include BootstrapForm::Inputs::DatetimeLocalField
-    include BootstrapForm::Inputs::DatetimeSelect
-    include BootstrapForm::Inputs::EmailField
-    include BootstrapForm::Inputs::FileField
-    include BootstrapForm::Inputs::GroupedCollectionSelect
-    include BootstrapForm::Inputs::MonthField
-    include BootstrapForm::Inputs::NumberField
-    include BootstrapForm::Inputs::PasswordField
-    include BootstrapForm::Inputs::PhoneField
-    include BootstrapForm::Inputs::RadioButton
-    include BootstrapForm::Inputs::RangeField
-    include BootstrapForm::Inputs::RichTextArea
-    include BootstrapForm::Inputs::SearchField
-    include BootstrapForm::Inputs::Select
-    include BootstrapForm::Inputs::Submit
-    include BootstrapForm::Inputs::TelephoneField
-    include BootstrapForm::Inputs::TextArea
-    include BootstrapForm::Inputs::TextField
-    include BootstrapForm::Inputs::TimeField
-    include BootstrapForm::Inputs::TimeSelect
-    include BootstrapForm::Inputs::TimeZoneSelect
-    include BootstrapForm::Inputs::UrlField
-    include BootstrapForm::Inputs::WeekField
+    include Bootstrap5Form::Inputs::Base
+    include Bootstrap5Form::Inputs::CheckBox
+    include Bootstrap5Form::Inputs::CollectionCheckBoxes
+    include Bootstrap5Form::Inputs::CollectionRadioButtons
+    include Bootstrap5Form::Inputs::CollectionSelect
+    include Bootstrap5Form::Inputs::ColorField
+    include Bootstrap5Form::Inputs::DateField
+    include Bootstrap5Form::Inputs::DateSelect
+    include Bootstrap5Form::Inputs::DatetimeField
+    include Bootstrap5Form::Inputs::DatetimeLocalField
+    include Bootstrap5Form::Inputs::DatetimeSelect
+    include Bootstrap5Form::Inputs::EmailField
+    include Bootstrap5Form::Inputs::FileField
+    include Bootstrap5Form::Inputs::GroupedCollectionSelect
+    include Bootstrap5Form::Inputs::MonthField
+    include Bootstrap5Form::Inputs::NumberField
+    include Bootstrap5Form::Inputs::PasswordField
+    include Bootstrap5Form::Inputs::PhoneField
+    include Bootstrap5Form::Inputs::RadioButton
+    include Bootstrap5Form::Inputs::RangeField
+    include Bootstrap5Form::Inputs::RichTextArea
+    include Bootstrap5Form::Inputs::SearchField
+    include Bootstrap5Form::Inputs::Select
+    include Bootstrap5Form::Inputs::Submit
+    include Bootstrap5Form::Inputs::TelephoneField
+    include Bootstrap5Form::Inputs::TextArea
+    include Bootstrap5Form::Inputs::TextField
+    include Bootstrap5Form::Inputs::TimeField
+    include Bootstrap5Form::Inputs::TimeSelect
+    include Bootstrap5Form::Inputs::TimeZoneSelect
+    include Bootstrap5Form::Inputs::UrlField
+    include Bootstrap5Form::Inputs::WeekField
 
     include ActionView::Helpers::OutputSafetyHelper
 
@@ -63,7 +63,7 @@ module BootstrapForm
 
     def add_default_form_attributes_and_form_inline(options)
       options[:html] ||= {}
-      options[:html].reverse_merge!(BootstrapForm.config.default_form_attributes)
+      options[:html].reverse_merge!(Bootstrap5Form.config.default_form_attributes)
 
       return unless options[:layout] == :inline
 
@@ -81,7 +81,7 @@ module BootstrapForm
     bootstrap_alias :fields_for
 
     # the Rails `fields` method passes its options
-    # to the builder, so there is no need to write a `bootstrap_form` helper
+    # to the builder, so there is no need to write a `bootstrap5_form` helper
     # for the `fields` method.
 
     private

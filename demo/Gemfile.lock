@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    bootstrap_form (5.4.0)
+    bootstrap5_form (5.4.0)
       actionpack (>= 7.1)
       activemodel (>= 7.1)
 
@@ -281,7 +281,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  bootstrap_form!
+  bootstrap5_form!
   brakeman
   capybara-screenshot-diff
   chunky_png (~> 1.4)

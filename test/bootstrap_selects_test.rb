@@ -1,7 +1,7 @@
 require_relative "test_helper"
 
 class BootstrapSelectsTest < ActionView::TestCase
-  include BootstrapForm::ActionViewExtensions::FormHelper
+  include Bootstrap5Form::ActionViewExtensions::FormHelper
 
   setup :setup_test_fixture
 
@@ -45,7 +45,7 @@ class BootstrapSelectsTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user) { |f| f.time_zone_select(:misc) }
+    assert_equivalent_html expected, bootstrap5_form_for(@user) { |f| f.time_zone_select(:misc) }
   end
 
   test "selects are wrapped correctly" do
@@ -208,7 +208,7 @@ class BootstrapSelectsTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user) { |f| f.collection_select(:status, [], :id, :name) }
+    assert_equivalent_html expected, bootstrap5_form_for(@user) { |f| f.collection_select(:status, [], :id, :name) }
   end
 
   test "collection_selects with options are wrapped correctly" do
@@ -289,7 +289,7 @@ class BootstrapSelectsTest < ActionView::TestCase
       </form>
     HTML
     assert_equivalent_html expected,
-                           bootstrap_form_for(@user) { |f| f.grouped_collection_select(:status, [], :last, :first, :to_s, :to_s) }
+                           bootstrap5_form_for(@user) { |f| f.grouped_collection_select(:status, [], :last, :first, :to_s, :to_s) }
   end
 
   test "grouped_collection_selects with options are wrapped correctly" do
@@ -403,7 +403,7 @@ class BootstrapSelectsTest < ActionView::TestCase
           </div>
         </form>
       HTML
-      assert_equivalent_html expected, bootstrap_form_for(@user, layout: :horizontal) { |f| f.date_select(:misc) }
+      assert_equivalent_html expected, bootstrap5_form_for(@user, layout: :horizontal) { |f| f.date_select(:misc) }
     end
   end
 
@@ -429,7 +429,7 @@ class BootstrapSelectsTest < ActionView::TestCase
           </div>
         </form>
       HTML
-      assert_equivalent_html expected, bootstrap_form_for(@user) { |f| f.date_select(:misc) }
+      assert_equivalent_html expected, bootstrap5_form_for(@user) { |f| f.date_select(:misc) }
     end
   end
 
@@ -530,7 +530,7 @@ class BootstrapSelectsTest < ActionView::TestCase
           </div>
         </form>
       HTML
-      assert_equivalent_html expected, bootstrap_form_for(@user) { |f| f.time_select(:misc) }
+      assert_equivalent_html expected, bootstrap5_form_for(@user) { |f| f.time_select(:misc) }
     end
   end
 
@@ -644,7 +644,7 @@ class BootstrapSelectsTest < ActionView::TestCase
           </div>
         </form>
       HTML
-      assert_equivalent_html expected, bootstrap_form_for(@user) { |f| f.datetime_select(:misc) }
+      assert_equivalent_html expected, bootstrap5_form_for(@user) { |f| f.datetime_select(:misc) }
     end
   end
 

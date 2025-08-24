@@ -1,7 +1,7 @@
 require_relative "test_helper"
 
-class BootstrapFormTest < ActionView::TestCase
-  include BootstrapForm::ActionViewExtensions::FormHelper
+class Bootstrap5FormTest < ActionView::TestCase
+  include Bootstrap5Form::ActionViewExtensions::FormHelper
 
   setup :setup_test_fixture
 
@@ -10,7 +10,7 @@ class BootstrapFormTest < ActionView::TestCase
       <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user) { |_f| nil }
+    assert_equivalent_html expected, bootstrap5_form_for(@user) { |_f| nil }
   end
 
   test "default-style form fields layout horizontal" do
@@ -53,7 +53,7 @@ class BootstrapFormTest < ActionView::TestCase
     HTML
 
     collection = [Address.new(id: 1, street: "Foo"), Address.new(id: 2, street: "Bar")]
-    actual = bootstrap_form_for(@user) do |f|
+    actual = bootstrap5_form_for(@user) do |f|
       concat(f.email_field(:email, layout: :horizontal))
       concat(f.check_box(:terms, label: "I agree to the terms"))
       concat(f.collection_radio_buttons(:misc, collection, :id, :street, layout: :horizontal))
@@ -98,7 +98,7 @@ class BootstrapFormTest < ActionView::TestCase
     HTML
 
     collection = [Address.new(id: 1, street: "Foo"), Address.new(id: 2, street: "Bar")]
-    actual = bootstrap_form_for(@user) do |f|
+    actual = bootstrap5_form_for(@user) do |f|
       concat(f.email_field(:email, layout: :inline))
       concat(f.check_box(:terms, label: "I agree to the terms", inline: true))
       concat(f.collection_radio_buttons(:misc, collection, :id, :street, layout: :inline))
@@ -112,12 +112,12 @@ class BootstrapFormTest < ActionView::TestCase
     # TODO: Align baseline better.
   end
 
-  test "default-style forms bootstrap_form_with Rails 7.1+" do
+  test "default-style forms bootstrap5_form_with Rails 7.1+" do
     expected = <<~HTML
       <form accept-charset="UTF-8" action="/users" method="post">
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_with(model: @user) { |_f| nil }
+    assert_equivalent_html expected, bootstrap5_form_with(model: @user) { |_f| nil }
   end
 
   test "inline-style forms" do
@@ -156,7 +156,7 @@ class BootstrapFormTest < ActionView::TestCase
     HTML
 
     collection = [Address.new(id: 1, street: "Foo"), Address.new(id: 2, street: "Bar")]
-    actual = bootstrap_form_for(@user, layout: :inline) do |f|
+    actual = bootstrap5_form_for(@user, layout: :inline) do |f|
       concat(f.email_field(:email))
       concat(f.check_box(:terms, label: "I agree to the terms"))
       concat(f.collection_radio_buttons(:misc, collection, :id, :street))
@@ -210,7 +210,7 @@ class BootstrapFormTest < ActionView::TestCase
     HTML
 
     collection = [Address.new(id: 1, street: "Foo"), Address.new(id: 2, street: "Bar")]
-    actual = bootstrap_form_for(@user, layout: :horizontal) do |f|
+    actual = bootstrap5_form_for(@user, layout: :horizontal) do |f|
       concat(f.email_field(:email))
       concat(f.check_box(:terms, label: "I agree to the terms"))
       concat(f.collection_radio_buttons(:misc, collection, :id, :street))
@@ -258,7 +258,7 @@ class BootstrapFormTest < ActionView::TestCase
     HTML
 
     collection = [Address.new(id: 1, street: "Foo"), Address.new(id: 2, street: "Bar")]
-    actual = bootstrap_form_for(@user, layout: :horizontal) do |f|
+    actual = bootstrap5_form_for(@user, layout: :horizontal) do |f|
       concat(f.email_field(:email, layout: :vertical))
       concat(f.check_box(:terms, label: "I agree to the terms"))
       concat(f.collection_radio_buttons(:misc, collection, :id, :street, layout: :vertical))
@@ -307,7 +307,7 @@ class BootstrapFormTest < ActionView::TestCase
     HTML
 
     collection = [Address.new(id: 1, street: "Foo"), Address.new(id: 2, street: "Bar")]
-    actual = bootstrap_form_for(@user, layout: :horizontal) do |f|
+    actual = bootstrap5_form_for(@user, layout: :horizontal) do |f|
       concat(f.email_field(:email, layout: :inline))
       concat(f.check_box(:terms, label: "I agree to the terms", inline: true))
       concat(f.collection_radio_buttons(:misc, collection, :id, :street, layout: :inline))
@@ -330,10 +330,10 @@ class BootstrapFormTest < ActionView::TestCase
       </form>
     HTML
     assert_equivalent_html expected,
-                           bootstrap_form_for(@user, layout: :horizontal, html: { class: "my-style" }) { |f| f.email_field :email }
+                           bootstrap5_form_for(@user, layout: :horizontal, html: { class: "my-style" }) { |f| f.email_field :email }
   end
 
-  class WarningFormBuilder < BootstrapForm::FormBuilder
+  class WarningFormBuilder < Bootstrap5Form::FormBuilder
     cattr_accessor :instance
     attr_reader :warnings
 
@@ -357,7 +357,7 @@ class BootstrapFormTest < ActionView::TestCase
       </form>
     HTML
     assert_equivalent_html expected,
-                           bootstrap_form_for(@user, builder: WarningFormBuilder, layout: :default) { |f|
+                           bootstrap5_form_for(@user, builder: WarningFormBuilder, layout: :default) { |f|
                              f.email_field :email, layout: :default
                            }
     assert_equal [
@@ -371,28 +371,28 @@ class BootstrapFormTest < ActionView::TestCase
       <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post" role="not-a-form">
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user, html: { role: "not-a-form" }) { |_f| nil }
+    assert_equivalent_html expected, bootstrap5_form_for(@user, html: { role: "not-a-form" }) { |_f| nil }
   end
 
   test "allows to set blank default form attributes via configuration" do
-    BootstrapForm.config.stubs(:default_form_attributes).returns({})
+    Bootstrap5Form.config.stubs(:default_form_attributes).returns({})
     expected = <<~HTML
       <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user) { |_f| nil }
+    assert_equivalent_html expected, bootstrap5_form_for(@user) { |_f| nil }
   end
 
   test "allows to set custom default form attributes via configuration" do
-    BootstrapForm.config.stubs(:default_form_attributes).returns(foo: "bar")
+    Bootstrap5Form.config.stubs(:default_form_attributes).returns(foo: "bar")
     expected = <<~HTML
       <form accept-charset="UTF-8" action="/users" class="new_user" foo="bar" id="new_user" method="post">
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user) { |_f| nil }
+    assert_equivalent_html expected, bootstrap5_form_for(@user) { |_f| nil }
   end
 
-  test "bootstrap_form_tag acts like a form tag" do
+  test "bootstrap5_form_tag acts like a form tag" do
     expected = <<~HTML
       <form accept-charset="UTF-8" action="/users" method="post">
         <div class="mb-3">
@@ -402,10 +402,10 @@ class BootstrapFormTest < ActionView::TestCase
       </form>
     HTML
     assert_equivalent_html expected,
-                           bootstrap_form_tag(url: "/users") { |f| f.text_field :email, label: "Your Email" }
+                           bootstrap5_form_tag(url: "/users") { |f| f.text_field :email, label: "Your Email" }
   end
 
-  test "bootstrap_form_for does not clobber custom options" do
+  test "bootstrap5_form_for does not clobber custom options" do
     expected = <<~HTML
       <form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
         <div class="mb-3">
@@ -414,10 +414,10 @@ class BootstrapFormTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user) { |f| f.text_field :email, name: "NAME", id: "ID" }
+    assert_equivalent_html expected, bootstrap5_form_for(@user) { |f| f.text_field :email, name: "NAME", id: "ID" }
   end
 
-  test "bootstrap_form_tag does not clobber custom options" do
+  test "bootstrap5_form_tag does not clobber custom options" do
     expected = <<~HTML
       <form accept-charset="UTF-8" action="/users" method="post">
         <div class="mb-3">
@@ -426,10 +426,10 @@ class BootstrapFormTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_tag(url: "/users") { |f| f.text_field :email, name: "NAME", id: "ID" }
+    assert_equivalent_html expected, bootstrap5_form_tag(url: "/users") { |f| f.text_field :email, name: "NAME", id: "ID" }
   end
 
-  test "bootstrap_form_tag allows an empty name for checkboxes" do
+  test "bootstrap5_form_tag allows an empty name for checkboxes" do
     expected = <<~HTML
       <form accept-charset="UTF-8" action="/users" method="post">
         <div class="form-check mb-3">
@@ -439,7 +439,7 @@ class BootstrapFormTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_tag(url: "/users") { |f| f.check_box :misc }
+    assert_equivalent_html expected, bootstrap5_form_tag(url: "/users") { |f| f.check_box :misc }
   end
 
   test "errors display correctly and inline_errors are turned off by default when label_errors is true" do
@@ -454,7 +454,7 @@ class BootstrapFormTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user, label_errors: true) { |f| f.text_field :email }
+    assert_equivalent_html expected, bootstrap5_form_for(@user, label_errors: true) { |f| f.text_field :email }
   end
 
   test "errors display correctly and inline_errors can also be on when label_errors is true" do
@@ -470,7 +470,7 @@ class BootstrapFormTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user, label_errors: true, inline_errors: true) { |f| f.text_field :email }
+    assert_equivalent_html expected, bootstrap5_form_for(@user, label_errors: true, inline_errors: true) { |f| f.text_field :email }
   end
 
   test "label error messages use humanized attribute names" do
@@ -488,7 +488,7 @@ class BootstrapFormTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user, label_errors: true, inline_errors: true) { |f| f.text_field :email }
+    assert_equivalent_html expected, bootstrap5_form_for(@user, label_errors: true, inline_errors: true) { |f| f.text_field :email }
   ensure
     I18n.backend.store_translations(:en, activerecord: { attributes: { user: { email: nil } } })
   end
@@ -531,7 +531,7 @@ class BootstrapFormTest < ActionView::TestCase
     @user.email = nil
     assert @user.invalid?
 
-    output = bootstrap_form_for(@user, inline_errors: false) do |f|
+    output = bootstrap5_form_for(@user, inline_errors: false) do |f|
       f.alert_message("Please fix the following errors:")
     end
 
@@ -554,7 +554,7 @@ class BootstrapFormTest < ActionView::TestCase
     @user.email = nil
     assert @user.invalid?
 
-    output = bootstrap_form_for(@user, inline_errors: false) do |f|
+    output = bootstrap5_form_for(@user, inline_errors: false) do |f|
       f.alert_message("Please fix the following errors:", error_summary: false)
     end
 
@@ -570,7 +570,7 @@ class BootstrapFormTest < ActionView::TestCase
     @user.email = nil
     assert @user.invalid?
 
-    output = bootstrap_form_for(@user, inline_errors: true) do |f|
+    output = bootstrap5_form_for(@user, inline_errors: true) do |f|
       f.alert_message("Please fix the following errors:", error_summary: true)
     end
 
@@ -632,7 +632,7 @@ class BootstrapFormTest < ActionView::TestCase
       </form>
     HTML
     assert_equivalent_html expected,
-                           bootstrap_form_for(@user, layout: :horizontal) { |f| f.email_field :email, label_col: "col-sm-1" }
+                           bootstrap5_form_for(@user, layout: :horizontal) { |f| f.email_field :email, label_col: "col-sm-1" }
   end
 
   test "offset for form group without label respects label width for horizontal forms" do
@@ -646,7 +646,7 @@ class BootstrapFormTest < ActionView::TestCase
       </form>
     HTML
     assert_equivalent_html expected,
-                           bootstrap_form_for(@user, layout: :horizontal, label_col: "col-md-2",
+                           bootstrap5_form_for(@user, layout: :horizontal, label_col: "col-md-2",
                                                      control_col: "col-md-10") { |f| f.form_group { f.submit } }
   end
 
@@ -661,7 +661,7 @@ class BootstrapFormTest < ActionView::TestCase
       </form>
     HTML
     assert_equivalent_html expected,
-                           bootstrap_form_for(@user, layout: :horizontal, label_col: %w[col-sm-4 col-md-2],
+                           bootstrap5_form_for(@user, layout: :horizontal, label_col: %w[col-sm-4 col-md-2],
                                                      control_col: "col-sm-8 col-md-10") { |f| f.form_group { f.submit } }
   end
 
@@ -677,7 +677,7 @@ class BootstrapFormTest < ActionView::TestCase
       </form>
     HTML
     assert_equivalent_html expected,
-                           bootstrap_form_for(@user, layout: :horizontal) { |f| f.email_field :email, control_col: "col-sm-5" }
+                           bootstrap5_form_for(@user, layout: :horizontal) { |f| f.email_field :email, control_col: "col-sm-5" }
   end
 
   test "additional input col class" do
@@ -691,16 +691,16 @@ class BootstrapFormTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    actual = bootstrap_form_for(@user,
+    actual = bootstrap5_form_for(@user,
                                 layout: :horizontal) { |f| f.email_field :email, add_control_col_class: "custom-class" }
     assert_equivalent_html expected, actual
   end
 
-  test "the field contains the error and is not wrapped in div.field_with_errors when bootstrap_form_for is used" do
+  test "the field contains the error and is not wrapped in div.field_with_errors when bootstrap5_form_for is used" do
     @user.email = nil
     assert @user.invalid?
 
-    output = bootstrap_form_for(@user) do |f|
+    output = bootstrap5_form_for(@user) do |f|
       f.text_field(:email, help: "This is required")
     end
 
@@ -721,7 +721,7 @@ class BootstrapFormTest < ActionView::TestCase
     @user.email = nil
     assert @user.invalid?
 
-    output = form_for(@user, builder: BootstrapForm::FormBuilder) do |f|
+    output = form_for(@user, builder: Bootstrap5Form::FormBuilder) do |f|
       f.text_field(:email, help: "This is required")
     end
 
@@ -742,11 +742,11 @@ class BootstrapFormTest < ActionView::TestCase
     assert_equivalent_html expected, output
   end
 
-  test "help is preserved when inline_errors: false is passed to bootstrap_form_for" do
+  test "help is preserved when inline_errors: false is passed to bootstrap5_form_for" do
     @user.email = nil
     assert @user.invalid?
 
-    output = bootstrap_form_for(@user, inline_errors: false) do |f|
+    output = bootstrap5_form_for(@user, inline_errors: false) do |f|
       f.text_field(:email, help: "This is required")
     end
 
@@ -765,7 +765,7 @@ class BootstrapFormTest < ActionView::TestCase
   test "help translations do not escape HTML when _html is appended to the name" do
     I18n.backend.store_translations(:en, activerecord: { help: { user: { email_html: "This is <strong>useful</strong> help" } } })
 
-    output = bootstrap_form_for(@user) do |f|
+    output = bootstrap5_form_for(@user) do |f|
       f.text_field(:email)
     end
 
@@ -784,7 +784,7 @@ class BootstrapFormTest < ActionView::TestCase
   end
 
   test "allows the form object to be nil" do
-    builder = BootstrapForm::FormBuilder.new :other_model, nil, self, {}
+    builder = Bootstrap5Form::FormBuilder.new :other_model, nil, self, {}
     expected = <<~HTML
       <div class="mb-3">
         <label class="form-label" for="other_model_email">Email</label>

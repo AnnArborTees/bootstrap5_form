@@ -33,7 +33,7 @@ class BootstrapTest < ApplicationSystemTestCase
       header = Regexp.last_match(2)
       unless /\A<%= bootstrap[^>]*>\n\s*...\s*<% end %>\z/.match? erb
         wrapped_erb = erb.starts_with?("<%= bootstrap") ? erb : <<~ERB
-          <%= bootstrap_form_with model: @user do |f| %>
+          <%= bootstrap5_form_with model: @user do |f| %>
             #{erb}
           <% end %>
         ERB

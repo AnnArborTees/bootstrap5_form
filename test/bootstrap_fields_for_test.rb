@@ -1,14 +1,14 @@
 require_relative "test_helper"
 
 class BootstrapFieldsForTest < ActionView::TestCase
-  include BootstrapForm::ActionViewExtensions::FormHelper
+  include Bootstrap5Form::ActionViewExtensions::FormHelper
 
   setup :setup_test_fixture
 
   test "bootstrap_fields_for helper works for associations" do
     @user.address = Address.new(street: "123 Main Street")
 
-    output = bootstrap_form_for(@user) do |_f|
+    output = bootstrap5_form_for(@user) do |_f|
       bootstrap_fields_for @user.address do |af|
         af.text_field(:street)
       end
@@ -28,7 +28,7 @@ class BootstrapFieldsForTest < ActionView::TestCase
   test "bootstrap_fields_for helper works for serialized hash attributes" do
     @user.preferences = { "favorite_color" => "cerulean" }
 
-    output = bootstrap_form_for(@user) do |_f|
+    output = bootstrap5_form_for(@user) do |_f|
       bootstrap_fields_for :preferences do |builder|
         builder.text_field :favorite_color, value: @user.preferences["favorite_color"]
       end
@@ -48,7 +48,7 @@ class BootstrapFieldsForTest < ActionView::TestCase
   test "bootstrap_fields helper works for associations" do
     @user.address = Address.new(street: "123 Main Street")
 
-    output = bootstrap_form_for(@user) do |_f|
+    output = bootstrap5_form_for(@user) do |_f|
       bootstrap_fields @user.address do |af|
         af.text_field(:street)
       end
@@ -68,7 +68,7 @@ class BootstrapFieldsForTest < ActionView::TestCase
   test "bootstrap_fields helper works for serialized hash attributes" do
     @user.preferences = { "favorite_color" => "cerulean" }
 
-    output = bootstrap_form_for(@user) do |_f|
+    output = bootstrap5_form_for(@user) do |_f|
       bootstrap_fields :preferences do |builder|
         builder.text_field :favorite_color, value: @user.preferences["favorite_color"]
       end

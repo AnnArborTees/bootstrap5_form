@@ -1,7 +1,7 @@
 require_relative "test_helper"
 
-class BootstrapFormGroupTest < ActionView::TestCase
-  include BootstrapForm::ActionViewExtensions::FormHelper
+class Bootstrap5FormGroupTest < ActionView::TestCase
+  include Bootstrap5Form::ActionViewExtensions::FormHelper
 
   setup :setup_test_fixture
 
@@ -192,7 +192,7 @@ class BootstrapFormGroupTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user) { |f| f.text_field :email, prepend: "$", append: ".00" }
+    assert_equivalent_html expected, bootstrap5_form_for(@user) { |f| f.text_field :email, prepend: "$", append: ".00" }
   end
 
   test "file field with prepend text" do
@@ -298,7 +298,7 @@ class BootstrapFormGroupTest < ActionView::TestCase
 
   test "help messages to warn about deprecated I18n key" do
     super_user = SuperUser.new(@user.attributes)
-    builder = BootstrapForm::FormBuilder.new(:super_user, super_user, self, {})
+    builder = Bootstrap5Form::FormBuilder.new(:super_user, super_user, self, {})
 
     I18n.backend.store_translations(:en, activerecord: {
                                       help: {
@@ -457,7 +457,7 @@ class BootstrapFormGroupTest < ActionView::TestCase
   test "upgrade doc for form_group renders check box correctly when object is invalid" do
     @user.errors.add(:misc, "Must select one.")
 
-    output = bootstrap_form_for(@user) do |f|
+    output = bootstrap5_form_for(@user) do |f|
       f.form_group :email do
         concat(f.radio_button(:misc, "primary school"))
         concat(f.radio_button(:misc, "high school"))
@@ -516,11 +516,11 @@ class BootstrapFormGroupTest < ActionView::TestCase
     assert_equivalent_html expected, output
   end
 
-  test "overrides the class of the wrapped form_group by a field with errors when bootstrap_form_for is used" do
+  test "overrides the class of the wrapped form_group by a field with errors when bootstrap5_form_for is used" do
     @user.email = nil
     assert @user.invalid?
 
-    output = bootstrap_form_for(@user) do |f|
+    output = bootstrap5_form_for(@user) do |f|
       f.text_field(:email, help: "This is required", wrapper_class: "none-margin")
     end
 
@@ -648,11 +648,11 @@ class BootstrapFormGroupTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    assert_equivalent_html expected, bootstrap_form_for(@user, layout: :horizontal) { |f| f.email_field :email, layout: :inline }
+    assert_equivalent_html expected, bootstrap5_form_for(@user, layout: :horizontal) { |f| f.email_field :email, layout: :inline }
   end
 
   test "non-default column span on form is reflected in form_group" do
-    non_default_horizontal_builder = BootstrapForm::FormBuilder.new(:user, @user, self, layout: :horizontal,
+    non_default_horizontal_builder = Bootstrap5Form::FormBuilder.new(:user, @user, self, layout: :horizontal,
                                                                                         label_col: "col-sm-3",
                                                                                         control_col: "col-sm-9")
     output = non_default_horizontal_builder.form_group do
@@ -670,7 +670,7 @@ class BootstrapFormGroupTest < ActionView::TestCase
   end
 
   test "non-default column span on form isn't mutated" do
-    frozen_horizontal_builder = BootstrapForm::FormBuilder.new(:user, @user, self, layout: :horizontal,
+    frozen_horizontal_builder = Bootstrap5Form::FormBuilder.new(:user, @user, self, layout: :horizontal,
                                                                                    label_col: "col-sm-3".freeze,
                                                                                    control_col: "col-sm-9".freeze)
     output = frozen_horizontal_builder.form_group { "test" }

@@ -1,8 +1,8 @@
 require "action_view"
 require "action_pack"
-require "bootstrap_form/action_view_extensions/form_helper"
+require "bootstrap5_form/action_view_extensions/form_helper"
 
-module BootstrapForm
+module Bootstrap5Form
   extend ActiveSupport::Autoload
 
   eager_autoload do
@@ -18,13 +18,13 @@ module BootstrapForm
   class << self
     def eager_load!
       super
-      BootstrapForm::Components.eager_load!
-      BootstrapForm::Helpers.eager_load!
-      BootstrapForm::Inputs.eager_load!
+      Bootstrap5Form::Components.eager_load!
+      Bootstrap5Form::Helpers.eager_load!
+      Bootstrap5Form::Inputs.eager_load!
     end
 
     def config
-      @config ||= BootstrapForm::Configuration.new
+      @config ||= Bootstrap5Form::Configuration.new
     end
 
     def configure
@@ -40,4 +40,4 @@ module BootstrapForm
   # rubocop:enable Style/ClassVars
 end
 
-require "bootstrap_form/engine" if defined?(Rails)
+require "bootstrap5_form/engine" if defined?(Rails)

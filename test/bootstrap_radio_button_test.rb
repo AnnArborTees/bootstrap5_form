@@ -1,7 +1,7 @@
 require_relative "test_helper"
 
 class BootstrapRadioButtonTest < ActionView::TestCase
-  include BootstrapForm::ActionViewExtensions::FormHelper
+  include Bootstrap5Form::ActionViewExtensions::FormHelper
 
   setup :setup_test_fixture
 
@@ -41,7 +41,7 @@ class BootstrapRadioButtonTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    actual = bootstrap_form_for(@user) do |f|
+    actual = bootstrap5_form_for(@user) do |f|
       f.radio_button(:misc, "1", label: "This is a radio button", error_message: true)
     end
     assert_equivalent_html expected, actual
@@ -106,7 +106,7 @@ class BootstrapRadioButtonTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    actual = bootstrap_form_for(@user, layout: :inline) do |f|
+    actual = bootstrap5_form_for(@user, layout: :inline) do |f|
       f.radio_button(:misc, "1", label: "This is a radio button")
     end
     assert_equivalent_html expected, actual
@@ -197,7 +197,7 @@ class BootstrapRadioButtonTest < ActionView::TestCase
       </form>
     HTML
 
-    actual = bootstrap_form_for(@user) do |f|
+    actual = bootstrap5_form_for(@user) do |f|
       f.collection_radio_buttons(:misc, collection, :id, :street)
     end
     assert_equivalent_html expected, actual

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module BootstrapForm
+module Bootstrap5Form
   class Configuration
     def default_form_attributes=(attributes)
       case attributes

@@ -2,43 +2,43 @@
 
 You can find recent releases with docs in GitHub:
 
-https://github.com/bootstrap-ruby/bootstrap_form/releases
+https://github.com/bootstrap-ruby/bootstrap5_form/releases
 
 ## Diffs
 
-- [5.4.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.3.2...v5.4.0)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2023-09-15T21%3A00..2023-10-30T00)
-- [5.3.2](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.3.1...v5.3.2)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2023-09-15T15%3A00..2023-09-15T21%3A00)
-- [5.3.1](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.3.0...v5.3.1)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2023-09-15T13%3A00..2023-09-15T15%3A00)
-- [5.3.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.2.3...v5.3.0)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2023-06-18T07%3A00..2023-09-15T13%3A00)
-- [5.2.2](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.2.2...v5.2.3)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2023-05-28T16%3A00..2023-06-18T07%3A00)
-- [5.2.2](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.2.1...v5.2.2)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2023-05-23T10%3A00..2023-05-28T16%3A00)
-- [5.2.1](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.2.0...v5.2.1)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2023-05-20T23%3A59..2023-05-23T10%3A00)
-- [5.2.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.1.0...v5.2.0)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2022-06-25T17%3A22..2023-05-20T23%3A59)
-- [5.1.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.0.0...v5.1.0)
-  [Closed issues](https://github.com/bootstrap-ruby/bootstrap_form/issues?q=closed%3A2021-11-12T05%3A58..2022-06-25T17%3A22)
-- [5.0.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.5.0...v5.0.0)
-- [4.5.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.4.0...v4.5.0)
-- [4.4.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.3.0...v4.4.0)
-- [4.3.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.2.0...v4.3.0)
-- [4.2.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.1.0...v4.2.0)
-- [4.1.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.0.0...v4.1.0)
-- [4.0.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.0.0.alpha1...v4.0.0)
-- [4.0.0.alpha1](https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.7.0...v4.0.0.alpha1)
-- [2.7.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.6.0...v2.7.0)
-- [2.6.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.5.3...v2.6.0)
-- [2.5.3](https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.5.2...v2.5.3)
-- [2.5.2](https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.5.1...v2.5.2)
-- [2.5.1](https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.5.0...v2.5.1)
-- [2.5.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.4.0...v2.5.0)
-- [2.4.0](https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.3.0...v2.4.0)
+- [5.4.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.3.2...v5.4.0)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2023-09-15T21%3A00..2023-10-30T00)
+- [5.3.2](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.3.1...v5.3.2)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2023-09-15T15%3A00..2023-09-15T21%3A00)
+- [5.3.1](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.3.0...v5.3.1)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2023-09-15T13%3A00..2023-09-15T15%3A00)
+- [5.3.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.2.3...v5.3.0)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2023-06-18T07%3A00..2023-09-15T13%3A00)
+- [5.2.2](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.2.2...v5.2.3)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2023-05-28T16%3A00..2023-06-18T07%3A00)
+- [5.2.2](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.2.1...v5.2.2)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2023-05-23T10%3A00..2023-05-28T16%3A00)
+- [5.2.1](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.2.0...v5.2.1)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2023-05-20T23%3A59..2023-05-23T10%3A00)
+- [5.2.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.1.0...v5.2.0)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2022-06-25T17%3A22..2023-05-20T23%3A59)
+- [5.1.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.0.0...v5.1.0)
+  [Closed issues](https://github.com/bootstrap-ruby/bootstrap5_form/issues?q=closed%3A2021-11-12T05%3A58..2022-06-25T17%3A22)
+- [5.0.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.5.0...v5.0.0)
+- [4.5.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.4.0...v4.5.0)
+- [4.4.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.3.0...v4.4.0)
+- [4.3.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.2.0...v4.3.0)
+- [4.2.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.1.0...v4.2.0)
+- [4.1.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.0.0...v4.1.0)
+- [4.0.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.0.0.alpha1...v4.0.0)
+- [4.0.0.alpha1](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.7.0...v4.0.0.alpha1)
+- [2.7.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.6.0...v2.7.0)
+- [2.6.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.5.3...v2.6.0)
+- [2.5.3](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.5.2...v2.5.3)
+- [2.5.2](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.5.1...v2.5.2)
+- [2.5.1](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.5.0...v2.5.1)
+- [2.5.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.4.0...v2.5.0)
+- [2.4.0](https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.3.0...v2.4.0)
 
 ## Older releases
 
@@ -48,24 +48,24 @@ The tooling to support our old way of doing the change log doesn't work anymore,
 
 ### Breaking changes
 
-* [#618](https://github.com/bootstrap-ruby/bootstrap_form/pull/618): Allow overriding the wrapper class - [@donv](https://github.com/donv).
+* [#618](https://github.com/bootstrap-ruby/bootstrap5_form/pull/618): Allow overriding the wrapper class - [@donv](https://github.com/donv).
 * Your contribution here!
 
 ### New features
 
-* [#572](https://github.com/bootstrap-ruby/bootstrap_form/issues/572): Simplify the formatting of the file upload control to follow the new Bootstrap 5 styles
-* [#573](https://github.com/bootstrap-ruby/bootstrap_form/issues/573): Add support for Bootstrap 5's floating labels
+* [#572](https://github.com/bootstrap-ruby/bootstrap5_form/issues/572): Simplify the formatting of the file upload control to follow the new Bootstrap 5 styles
+* [#573](https://github.com/bootstrap-ruby/bootstrap5_form/issues/573): Add support for Bootstrap 5's floating labels
 
-* [#215](https://github.com/bootstrap-ruby/bootstrap_form/issues/215): Add `include_hidden` option to `check_box`
+* [#215](https://github.com/bootstrap-ruby/bootstrap5_form/issues/215): Add `include_hidden` option to `check_box`
 ### Bugfixes
 
-* [#582](https://github.com/bootstrap-ruby/bootstrap_form/issues/582): Fix tests in bootstrap-5 branch, removes Rubocop offenses, and adds testing with Rails 6.1.
+* [#582](https://github.com/bootstrap-ruby/bootstrap5_form/issues/582): Fix tests in bootstrap-5 branch, removes Rubocop offenses, and adds testing with Rails 6.1.
 
 ## [5.0.0.alpha1][]
 
 ### Breaking changes
 
-* [#569] Remove `role="form"` from the default generated form HTML so forms pass W3C validation. (Only a breaking change if you depended on the `form` attribute. `bootstrap_form` doesn't depend on it.)
+* [#569] Remove `role="form"` from the default generated form HTML so forms pass W3C validation. (Only a breaking change if you depended on the `form` attribute. `bootstrap5_form` doesn't depend on it.)
 
 ### New features
 
@@ -83,18 +83,18 @@ The tooling to support our old way of doing the change log doesn't work anymore,
 
 ### New features
 
-* [#572](https://github.com/bootstrap-ruby/bootstrap_form/issues/572): Simplify the formatting of the file upload control to follow the new Bootstrap 5 styles
-* [#573](https://github.com/bootstrap-ruby/bootstrap_form/issues/573): Add support for Bootstrap 5's floating labels
+* [#572](https://github.com/bootstrap-ruby/bootstrap5_form/issues/572): Simplify the formatting of the file upload control to follow the new Bootstrap 5 styles
+* [#573](https://github.com/bootstrap-ruby/bootstrap5_form/issues/573): Add support for Bootstrap 5's floating labels
 
 ### Bugfixes
 
-* [#582](https://github.com/bootstrap-ruby/bootstrap_form/issues/582): Fix tests in bootstrap-5 branch, removes Rubocop offenses, and adds testing with Rails 6.1.
+* [#582](https://github.com/bootstrap-ruby/bootstrap5_form/issues/582): Fix tests in bootstrap-5 branch, removes Rubocop offenses, and adds testing with Rails 6.1.
 
 ## [5.0.0.alpha1][]
 
 ### Breaking changes
 
-* [#569] Remove `role="form"` from the default generated form HTML so forms pass W3C validation. (Only a breaking change if you depended on the `form` attribute. `bootstrap_form` doesn't depend on it.)
+* [#569] Remove `role="form"` from the default generated form HTML so forms pass W3C validation. (Only a breaking change if you depended on the `form` attribute. `bootstrap5_form` doesn't depend on it.)
 
 ### New features
 
@@ -102,21 +102,21 @@ The tooling to support our old way of doing the change log doesn't work anymore,
 
 ### Bugfixes
 
-* [#586](https://github.com/bootstrap-ruby/bootstrap_form/pull/586): Fix Rails 6.1 tests on master - [@thimo](https://github.com/thimo).
-* [#587](https://github.com/bootstrap-ruby/bootstrap_form/pull/587): Replace `strip_heredoc` with `<<~` - [@thimo](https://github.com/thimo).
+* [#586](https://github.com/bootstrap-ruby/bootstrap5_form/pull/586): Fix Rails 6.1 tests on master - [@thimo](https://github.com/thimo).
+* [#587](https://github.com/bootstrap-ruby/bootstrap5_form/pull/587): Replace `strip_heredoc` with `<<~` - [@thimo](https://github.com/thimo).
 
 ## [4.5.0][] (2020-04-29)
 
 ### New features
 
-* [#562](https://github.com/bootstrap-ruby/bootstrap_form/pull/562): Allow to configure default form attributes - [@sharshenov](https://github.com/sharshenov).
+* [#562](https://github.com/bootstrap-ruby/bootstrap5_form/pull/562): Allow to configure default form attributes - [@sharshenov](https://github.com/sharshenov).
 
 ## [4.4.0][] (2020-03-08)
 
 ### New features
 
-* [#557](https://github.com/bootstrap-ruby/bootstrap_form/pull/557): Allow prepending and appending multiple items to an input by passing an array to `prepend` and `append` options - [@donv](https://github.com/donv).
-* [#550](https://github.com/bootstrap-ruby/bootstrap_form/pull/550): Add `default_layout` so we can use it for all forms - [@duleorlovic](https://github.com/duleorlovic).
+* [#557](https://github.com/bootstrap-ruby/bootstrap5_form/pull/557): Allow prepending and appending multiple items to an input by passing an array to `prepend` and `append` options - [@donv](https://github.com/donv).
+* [#550](https://github.com/bootstrap-ruby/bootstrap5_form/pull/550): Add `default_layout` so we can use it for all forms - [@duleorlovic](https://github.com/duleorlovic).
 
 ### Bugfixes
 
@@ -135,12 +135,12 @@ The tooling to support our old way of doing the change log doesn't work anymore,
 
 * [#508] Support `rich_text_area` AKA the Trix editor on Rails 6+.
 * [#518] Move all inputs to separate, more maintainable files.
-* [#514](https://github.com/bootstrap-ruby/bootstrap_form/pull/514): Add support for BS 4.2 switches - [@simmerz](https://github.com/simmerz)
+* [#514](https://github.com/bootstrap-ruby/bootstrap5_form/pull/514): Add support for BS 4.2 switches - [@simmerz](https://github.com/simmerz)
 
 ### Bugfixes
 
-* [#522](https://github.com/bootstrap-ruby/bootstrap_form/pull/522): Clean up rubocop offences - [@simmerz](https://github.com/simmerz)
-* [#524](https://github.com/bootstrap-ruby/bootstrap_form/pull/524): Fix non-inline layout rendering without help text - [@simmerz](https://github.com/simmerz)
+* [#522](https://github.com/bootstrap-ruby/bootstrap5_form/pull/522): Clean up rubocop offences - [@simmerz](https://github.com/simmerz)
+* [#524](https://github.com/bootstrap-ruby/bootstrap5_form/pull/524): Fix non-inline layout rendering without help text - [@simmerz](https://github.com/simmerz)
 
 ## [4.1.0][] (2019-01-19)
 
@@ -156,11 +156,11 @@ The tooling to support our old way of doing the change log doesn't work anymore,
 
 🚨 **This release adds support for Bootstrap v4 and drops support for Bootstrap v3.** 🚨
 
-If your app uses Bootstrap v3, you should continue using bootstrap_form 2.7.x instead.
+If your app uses Bootstrap v3, you should continue using bootstrap5_form 2.7.x instead.
 
-Bootstrap v3 and v4 are very different, and thus bootstrap_form now produces different markup in order to target v4. The changes are too many to list here; you can refer to Bootstrap's [Migrating to v4](https://getbootstrap.com/docs/4.0/migration/) page for a detailed explanation.
+Bootstrap v3 and v4 are very different, and thus bootstrap5_form now produces different markup in order to target v4. The changes are too many to list here; you can refer to Bootstrap's [Migrating to v4](https://getbootstrap.com/docs/4.0/migration/) page for a detailed explanation.
 
-In addition to these necessary markup changes, the bootstrap_form API itself has the following important changes in this release.
+In addition to these necessary markup changes, the bootstrap5_form API itself has the following important changes in this release.
 
 ### Breaking changes
 
@@ -169,26 +169,26 @@ In addition to these necessary markup changes, the bootstrap_form API itself has
 ### New features
 
 * [#476] Give a way to pass classes to the `div.form-check` wrapper for check boxes and radio buttons - [@lcreid](https://github.com/lcreid).
-* [461](https://github.com/bootstrap-ruby/bootstrap_form/pull/461): default form-inline class applied to parent content div on date select helpers. Can override with a :skip_inline option on the field helper - [@lancecarlson](https://github.com/lancecarlson).
+* [461](https://github.com/bootstrap-ruby/bootstrap5_form/pull/461): default form-inline class applied to parent content div on date select helpers. Can override with a :skip_inline option on the field helper - [@lancecarlson](https://github.com/lancecarlson).
 * The `button`, `submit`, and `primary` helpers can now receive an additional option, `extra_class`. This option allows us to specify additional CSS classes to be added to the corresponding button/input, _while_ maintaining the original default ones. E.g., a primary button with an `extra_class` 'test-button' will have its final CSS classes declaration as 'btn btn-primary test-button'.
-* [#488](https://github.com/bootstrap-ruby/bootstrap_form/pull/488): add required option on form_group_builder - [@ThomasSevestre](https://github.com/ThomasSevestre).
+* [#488](https://github.com/bootstrap-ruby/bootstrap5_form/pull/488): add required option on form_group_builder - [@ThomasSevestre](https://github.com/ThomasSevestre).
 
 ### Bugfixes
 
-* [#347](https://github.com/bootstrap-ruby/bootstrap_form/issues/347) Fix `wrapper_class` and `wrapper` options for helpers that have `html_options`.
-* [#472](https://github.com/bootstrap-ruby/bootstrap_form/pull/472) Use `id` option value as `for` attribute of label for custom checkboxes and radio buttons.
-* [#478](https://github.com/bootstrap-ruby/bootstrap_form/issues/478) Fix offset for form group without label when multiple label widths are specified.
+* [#347](https://github.com/bootstrap-ruby/bootstrap5_form/issues/347) Fix `wrapper_class` and `wrapper` options for helpers that have `html_options`.
+* [#472](https://github.com/bootstrap-ruby/bootstrap5_form/pull/472) Use `id` option value as `for` attribute of label for custom checkboxes and radio buttons.
+* [#478](https://github.com/bootstrap-ruby/bootstrap5_form/issues/478) Fix offset for form group without label when multiple label widths are specified.
 
 
 ## [4.0.0.alpha1][] (2018-06-16)
 
 🚨 **This release adds support for Bootstrap v4 and drops support for Bootstrap v3.** 🚨
 
-If your app uses Bootstrap v3, you should continue using bootstrap_form 2.7.x instead.
+If your app uses Bootstrap v3, you should continue using bootstrap5_form 2.7.x instead.
 
-Bootstrap v3 and v4 are very different, and thus bootstrap_form now produces different markup in order to target v4. The changes are too many to list here; you can refer to Bootstrap's [Migrating to v4](https://getbootstrap.com/docs/4.0/migration/) page for a detailed explanation.
+Bootstrap v3 and v4 are very different, and thus bootstrap5_form now produces different markup in order to target v4. The changes are too many to list here; you can refer to Bootstrap's [Migrating to v4](https://getbootstrap.com/docs/4.0/migration/) page for a detailed explanation.
 
-In addition to these necessary markup changes, the bootstrap_form API itself has the following important changes in this release.
+In addition to these necessary markup changes, the bootstrap5_form API itself has the following important changes in this release.
 
 ### Breaking changes
 
@@ -197,31 +197,31 @@ In addition to these necessary markup changes, the bootstrap_form API itself has
 * Built-in support for the `nested_form` gem has been completely removed
 * The `icon` option is no longer supported (Bootstrap v4 does not include icons)
 * The deprecated Rails methods `check_boxes_collection` and `radio_buttons_collection` have been removed
-* `hide_label: true` and `skip_label: true` on individual check boxes and radio buttons apply Bootstrap 4 markup. This means the appearance of a page may change if you're upgrading from the Bootstrap 3 version of `bootstrap_form`, and you used `check_box` or `radio_button` with either of those options
+* `hide_label: true` and `skip_label: true` on individual check boxes and radio buttons apply Bootstrap 4 markup. This means the appearance of a page may change if you're upgrading from the Bootstrap 3 version of `bootstrap5_form`, and you used `check_box` or `radio_button` with either of those options
 * `static_control` will no longer properly show error messages. This is the result of bootstrap changes.
 * `static_control` will also no longer accept a block, use the `value` option instead.
 * `form_group` with a block that produces arbitrary text needs to be modified to produce validation error messages (see the UPGRADE-4.0 document). [@lcreid](https://github.com/lcreid).
 * `form_group` with a block that contains more than one `check_box` or `radio_button` needs to be modified to produce validation error messages (see the UPGRADE-4.0 document). [@lcreid](https://github.com/lcreid).
-* [#456](https://github.com/bootstrap-ruby/bootstrap_form/pull/456): Fix label `for` attribute when passing non-english characters using `collection_check_boxes` - [@ug0](https://github.com/ug0).
-* [#449](https://github.com/bootstrap-ruby/bootstrap_form/pull/449): Bootstrap 4 no longer mixes in `.row` in `.form-group`. `bootstrap_form` adds `.row` to `div.form-group` when layout is horizontal.
+* [#456](https://github.com/bootstrap-ruby/bootstrap5_form/pull/456): Fix label `for` attribute when passing non-english characters using `collection_check_boxes` - [@ug0](https://github.com/ug0).
+* [#449](https://github.com/bootstrap-ruby/bootstrap5_form/pull/449): Bootstrap 4 no longer mixes in `.row` in `.form-group`. `bootstrap5_form` adds `.row` to `div.form-group` when layout is horizontal.
 
 ### New features
 
 * Support for Rails 5.1 `form_with` - [@lcreid](https://github.com/lcreid).
 * Support Bootstrap v4's [Custom Checkboxes and Radios](https://getbootstrap.com/docs/4.0/components/forms/#checkboxes-and-radios-1) with a new `custom: true` option
 * Allow HTML in help translations by using the `_html` suffix on the key - [@unikitty37](https://github.com/unikitty37)
-* [#408](https://github.com/bootstrap-ruby/bootstrap_form/pull/408): Add option[:id] on static control #245 - [@duleorlovic](https://github.com/duleorlovic).
-* [#455](https://github.com/bootstrap-ruby/bootstrap_form/pull/455): Support for i18n `:html` subkeys in help text - [@jsaraiva](https://github.com/jsaraiva).
+* [#408](https://github.com/bootstrap-ruby/bootstrap5_form/pull/408): Add option[:id] on static control #245 - [@duleorlovic](https://github.com/duleorlovic).
+* [#455](https://github.com/bootstrap-ruby/bootstrap5_form/pull/455): Support for i18n `:html` subkeys in help text - [@jsaraiva](https://github.com/jsaraiva).
 * Adds support for `label_as_placeholder` option, which will set the label text as an input fields placeholder (and hiding the label for sr_only).
-* [#449](https://github.com/bootstrap-ruby/bootstrap_form/pull/449): Passing `.form-row` overrides default `.form-group.row` in horizontal layouts.
+* [#449](https://github.com/bootstrap-ruby/bootstrap5_form/pull/449): Passing `.form-row` overrides default `.form-group.row` in horizontal layouts.
 * Added an option to the `submit` (and `primary`, by transitivity) form tag helper, `render_as_button`, which when truthy makes the submit button render as a button instead of an input. This allows you to easily provide further styling to your form submission buttons, without requiring you to reinvent the wheel and use the `button` helper (and having to manually insert the typical Bootstrap classes). - [@jsaraiva](https://github.com/jsaraiva).
 * Add `:error_message` option to `check_box` and `radio_button`, so they can output validation error messages if needed. [@lcreid](https://github.com/lcreid).
-* [#487](https://github.com/bootstrap-ruby/bootstrap_form/pull/487): Add add_control_col_class option on form_group. - [@ThomasSevestre](https://github.com/ThomasSevestre).
+* [#487](https://github.com/bootstrap-ruby/bootstrap5_form/pull/487): Add add_control_col_class option on form_group. - [@ThomasSevestre](https://github.com/ThomasSevestre).
 * Your contribution here!
 
 ### Bugfixes
 
-* [#357](https://github.com/bootstrap-ruby/bootstrap_form/pull/357) if provided,
+* [#357](https://github.com/bootstrap-ruby/bootstrap5_form/pull/357) if provided,
   use html option `id` to specify `for` attribute on label
   [@duleorlovic](https://github.com/duleorlovic)
 
@@ -229,7 +229,7 @@ In addition to these necessary markup changes, the bootstrap_form API itself has
 ## [2.7.0][] (2017-04-21)
 
 Features:
-  * [#325](https://github.com/bootstrap-ruby/bootstrap_form/pull/325): Support :prepend and :append for the `select` helper - [@donv](https://github.com/donv).
+  * [#325](https://github.com/bootstrap-ruby/bootstrap5_form/pull/325): Support :prepend and :append for the `select` helper - [@donv](https://github.com/donv).
 
 ## [2.6.0][] (2017-02-03)
 
@@ -237,7 +237,7 @@ Bugfixes:
   - Fix ambiguous first argument warning (#311, @mikenicklas)
 
 Features:
-  - Add a FormBuilder#custom_control helper [#289](https://github.com/bootstrap-ruby/bootstrap_form/pull/289)
+  - Add a FormBuilder#custom_control helper [#289](https://github.com/bootstrap-ruby/bootstrap5_form/pull/289)
 
 ## [2.5.3][] (2016-12-23)
 
@@ -252,7 +252,7 @@ Bugfixes:
 ## [2.5.1][] (2016-09-23)
 
 Bugfixes:
-  - Fix getting help text for elements when using anonymous models (see [issue 282](https://github.com/bootstrap-ruby/bootstrap_form/issues/282))
+  - Fix getting help text for elements when using anonymous models (see [issue 282](https://github.com/bootstrap-ruby/bootstrap5_form/issues/282))
 
 ## [2.5.0][] (2016-08-12)
 
@@ -307,7 +307,7 @@ Features:
 Bugfixes:
 
   - Fixed an exception raised when form_group block returns nil (#111)
-  - Fixed an exception on human_attribute_name when using bootstrap_form_tag (#115)
+  - Fixed an exception on human_attribute_name when using bootstrap5_form_tag (#115)
   - Set offset in form_group without label in horizontal layout (#94, @datWav)
   - Fixes an offset bug in form_group without a given label in horizontal layout (#130, @datWav)
   - Fixed bug where collection_check_boxes doesn't work if all are unchecked (#116, @burnt43)
@@ -334,7 +334,7 @@ Features:
 Bugfixes:
 
   - Do not reset additional classes on the form-group (@rzane)
-  - Fixed an exception when specifying a label while using bootstrap_form_tag
+  - Fixed an exception when specifying a label while using bootstrap5_form_tag
 
 Features:
 
@@ -344,8 +344,8 @@ Features:
 
 ## 2.1.0 (2014-04-01)
 
-Moved GitHub repository from https://github.com/potenza/bootstrap_form
-to https://github.com/bootstrap-ruby/bootstrap_form
+Moved GitHub repository from https://github.com/potenza/bootstrap5_form
+to https://github.com/bootstrap-ruby/bootstrap5_form
 
 Bugfixes:
 
@@ -369,7 +369,7 @@ Features:
   - Added a FormBuilder#static_control helper
   - Added support for radio_buttons_collection and check_boxes_collection
   - Added a FormBuilder#error_summary helper method
-  - inline_errors can be turned off: bootstrap_form_for(obj, inline_errors: false)
+  - inline_errors can be turned off: bootstrap5_form_for(obj, inline_errors: false)
     When inline errors are off, FormBuilder#alert_message contains the error summary.
     This can also be turned off with the option 'error_summary: false'
   - Added support for: color_field, date_field, datetime_field, datetime_local_field,
@@ -382,23 +382,23 @@ Features:
   - Renamed option :style to :layout (@baldwindavid)
   - Added errors_on helper (@baldwindavid)
   - Added per field layout option (@baldwindavid)
-  - Added support for bootstrap_form_tag (@baldwindavid)
+  - Added support for bootstrap5_form_tag (@baldwindavid)
 
 
-[Pending Release]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.1.0...HEAD
-[5.1.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v5.0.0...v5.1.0
-[5.0.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.5.0...v5.0.0
-[4.5.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.4.0...v4.5.0
-[4.4.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.3.0...v4.4.0
-[4.3.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.2.0...v4.3.0
-[4.2.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.1.0...v4.2.0
-[4.1.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.0.0...v4.1.0
-[4.0.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v4.0.0.alpha1...v4.0.0
-[4.0.0.alpha1]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.7.0...v4.0.0.alpha1
-[2.7.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.6.0...v2.7.0
-[2.6.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.5.3...v2.6.0
-[2.5.3]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.5.2...v2.5.3
-[2.5.2]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.5.1...v2.5.2
-[2.5.1]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.5.0...v2.5.1
-[2.5.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.4.0...v2.5.0
-[2.4.0]: https://github.com/bootstrap-ruby/bootstrap_form/compare/v2.3.0...v2.4.0
+[Pending Release]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.1.0...HEAD
+[5.1.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v5.0.0...v5.1.0
+[5.0.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.5.0...v5.0.0
+[4.5.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.4.0...v4.5.0
+[4.4.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.3.0...v4.4.0
+[4.3.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.2.0...v4.3.0
+[4.2.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.1.0...v4.2.0
+[4.1.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.0.0...v4.1.0
+[4.0.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v4.0.0.alpha1...v4.0.0
+[4.0.0.alpha1]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.7.0...v4.0.0.alpha1
+[2.7.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.6.0...v2.7.0
+[2.6.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.5.3...v2.6.0
+[2.5.3]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.5.2...v2.5.3
+[2.5.2]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.5.1...v2.5.2
+[2.5.1]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.5.0...v2.5.1
+[2.5.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.4.0...v2.5.0
+[2.4.0]: https://github.com/bootstrap-ruby/bootstrap5_form/compare/v2.3.0...v2.4.0

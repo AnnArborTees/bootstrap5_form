@@ -1,10 +1,10 @@
 # Contributing
 
-Thanks so much for considering a contribution to bootstrap_form. We love pull requests!
+Thanks so much for considering a contribution to bootstrap5_form. We love pull requests!
 
 We want everyone to feel welcome to contribute. We encourage respectful exchanges of ideas. We govern ourselves with the Contributor Covenant [Code of Conduct](/CODE_OF_CONDUCT.md).
 
-There are a number of ways you can contribute to `bootstrap_form`:
+There are a number of ways you can contribute to `bootstrap5_form`:
 
 - Fix a bug or add a new feature
 - Add to the documentation
@@ -98,7 +98,7 @@ Note that most editors have plugins to run RuboCop as you type, or when you save
 
 ### Supported Versions of Ruby and Rails
 
-The goal of `bootstrap_form` is to support all versions of Rails currently supported for bug fixes and security issues. We do not test against versions supported for severe security issues. We test against the minimum [version of Ruby required](https://guides.rubyonrails.org/upgrading_ruby_on_rails.html#ruby-versions) for those versions of Rails.
+The goal of `bootstrap5_form` is to support all versions of Rails currently supported for bug fixes and security issues. We do not test against versions supported for severe security issues. We test against the minimum [version of Ruby required](https://guides.rubyonrails.org/upgrading_ruby_on_rails.html#ruby-versions) for those versions of Rails.
 
 The Ruby on Rails support policy is [here](https://guides.rubyonrails.org/maintenance_policy.html).
 
@@ -112,7 +112,7 @@ If you're intested in trying the Docker approach, read the [documentation](DOCKE
 
 ### The Demo Application
 
-There is a demo app in this repository. It shows some of the features of `bootstrap_form`, and provides a base on which to build ad-hoc testing, if you need it.
+There is a demo app in this repository. It shows some of the features of `bootstrap5_form`, and provides a base on which to build ad-hoc testing, if you need it.
 
 Currently, the demo app is only set up to run for Rails 7, due to the variety of ways to include CSS and JavaScript in a modern Rails application.
 To run the demo app, set up the database and run the server:
@@ -127,7 +127,7 @@ dev
 To run the demo app in the Docker container:
 
 ```bash
-docker run --volume "$PWD:/app" --user $UID:`grep ^$USERNAME /etc/passwd | cut -d: -f4` -p 3000:3000 -it bootstrap_form /bin/bash
+docker run --volume "$PWD:/app" --user $UID:`grep ^$USERNAME /etc/passwd | cut -d: -f4` -p 3000:3000 -it bootstrap5_form /bin/bash
 cd demo
 bundle
 rails db:setup
@@ -158,7 +158,7 @@ This means it's using `esbuild` to pre-process the JavaScript and (S)CSS, and th
 
 ## Documentation Contributions
 
-Contributions to documentation are always welcome. Even fixing one typo improves the quality of `bootstrap_form`. To make a documentation contribution, follow steps 1-3 of Code Contributions, then make the documentation changes, then make the pull request (step 6 of Code Contributions).
+Contributions to documentation are always welcome. Even fixing one typo improves the quality of `bootstrap5_form`. To make a documentation contribution, follow steps 1-3 of Code Contributions, then make the documentation changes, then make the pull request (step 6 of Code Contributions).
 
 If you put `[ci skip]` in the commit message of the most recent commit of the PR, you'll be a good citizen by not causing our CI pipeline to run all the tests when it's not necessary.
 
@@ -168,13 +168,13 @@ We are an entirely volunteer project. Sometimes it's hard for people to find the
 
 ---
 
-Thanks to all the [great contributors](https://github.com/bootstrap-ruby/bootstrap_form/graphs/contributors) over the years.
+Thanks to all the [great contributors](https://github.com/bootstrap-ruby/bootstrap5_form/graphs/contributors) over the years.
 
 ## Troubleshooting
 
 ### Models and Database Tables
 
-`bootstrap_form` needs a few models and tables to support testing. It appears that the necessary tables were created via the `demo/db/schema.rb` file. To support `rich_text_area`, Rails 6 creates some migrations. These migrations had to be run in the existing database (not an empty one) to create a new `schema.rb` that creates the `bootstrap_form` test tables, and the tables needed by Rails 6. The `schema.rb` file was checked in to GitHub, but the migrations were not.
+`bootstrap5_form` needs a few models and tables to support testing. It appears that the necessary tables were created via the `demo/db/schema.rb` file. To support `rich_text_area`, Rails 6 creates some migrations. These migrations had to be run in the existing database (not an empty one) to create a new `schema.rb` that creates the `bootstrap5_form` test tables, and the tables needed by Rails 6. The `schema.rb` file was checked in to GitHub, but the migrations were not.
 
 In the future, any new Rails functionality that creates tables would likely have to be prepared the same way:
 

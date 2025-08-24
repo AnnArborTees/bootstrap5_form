@@ -1,17 +1,17 @@
 # Releasing
 
-Follow these steps to release a new version of bootstrap_form to rubygems.org.
+Follow these steps to release a new version of bootstrap5_form to rubygems.org.
 
 ## Prerequisites
 
-* You must have commit rights to the bootstrap_form repository.
-* You must have push rights for the bootstrap_form gem on rubygems.org.
+* You must have commit rights to the bootstrap5_form repository.
+* You must have push rights for the bootstrap5_form gem on rubygems.org.
 * You must be using a Ruby version that is not end-of-life.
 
 ## How to release
 
 1. Determine which would be the correct next version number according to [semver](http://semver.org/).
-2. Update the version in `./lib/bootstrap_form/version.rb`.
+2. Update the version in `./lib/bootstrap5_form/version.rb`.
 3. Make sure that you have all the gems necessary for testing and releasing.
 
        BUNDLE_GEMFILE=gemfiles/7.1.gemfile bundle update
@@ -38,7 +38,7 @@ Follow these steps to release a new version of bootstrap_form to rubygems.org.
 
        bundle exec rake release
 
-10. Go to https://github.com/bootstrap-ruby/bootstrap_form/releases and create the new release and add release notes by clicking the "Generate release notes" button.
+10. Go to https://github.com/bootstrap-ruby/bootstrap5_form/releases and create the new release and add release notes by clicking the "Generate release notes" button.
     Add the link of closed issues from CHANGELOG.
     Group the commits in sections:
     * ### New features

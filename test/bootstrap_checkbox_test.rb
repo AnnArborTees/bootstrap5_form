@@ -1,7 +1,7 @@
 require_relative "test_helper"
 
 class BootstrapCheckboxTest < ActionView::TestCase
-  include BootstrapForm::ActionViewExtensions::FormHelper
+  include Bootstrap5Form::ActionViewExtensions::FormHelper
 
   setup :setup_test_fixture
 
@@ -133,7 +133,7 @@ class BootstrapCheckboxTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    actual = bootstrap_form_for(@user, layout: :inline) do |f|
+    actual = bootstrap5_form_for(@user, layout: :inline) do |f|
       f.check_box(:terms, label: "I agree to the terms")
     end
     assert_equivalent_html expected, actual
@@ -534,7 +534,7 @@ class BootstrapCheckboxTest < ActionView::TestCase
       </form>
     HTML
 
-    actual = bootstrap_form_for(@user) do |f|
+    actual = bootstrap5_form_for(@user) do |f|
       f.collection_check_boxes(:misc, collection, :id, :street)
     end
 
@@ -584,7 +584,7 @@ class BootstrapCheckboxTest < ActionView::TestCase
       </form>
     HTML
 
-    actual = bootstrap_form_for(@user) do |f|
+    actual = bootstrap5_form_for(@user) do |f|
       f.collection_check_boxes(:misc, collection, :id, :street, checked: collection)
     end
     assert_equivalent_html expected, actual
@@ -604,7 +604,7 @@ class BootstrapCheckboxTest < ActionView::TestCase
         </div>
       </form>
     HTML
-    actual = bootstrap_form_for(@user) do |f|
+    actual = bootstrap5_form_for(@user) do |f|
       f.check_box(:terms, label: "I agree to the terms", error_message: true)
     end
     assert_equivalent_html expected, actual

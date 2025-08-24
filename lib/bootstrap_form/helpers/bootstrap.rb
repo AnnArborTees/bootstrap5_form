@@ -1,4 +1,4 @@
-module BootstrapForm
+module Bootstrap5Form
   module Helpers
     module Bootstrap
       include ActionView::Helpers::OutputSafetyHelper

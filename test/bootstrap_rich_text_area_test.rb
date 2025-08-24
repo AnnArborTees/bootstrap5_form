@@ -3,7 +3,7 @@ require "minitest/mock"
 
 class BootstrapRichTextAreaTest < ActionView::TestCase
   tests ActionText::TagHelper
-  include BootstrapForm::ActionViewExtensions::FormHelper
+  include Bootstrap5Form::ActionViewExtensions::FormHelper
 
   setup :setup_test_fixture
 
